@@ -1,0 +1,108 @@
+{
+  "customer": [
+    {
+      "id": "CS001",
+      "name": "Ravi Krishna",
+      "address": "1st street,Nandan street,chennai 600021",
+      "taxcode": "Inclusive"
+    },
+    {
+      "id": "CS002",
+      "name": "Ratha Kannan",
+      "address": "2nd street,Nandan street,chennai 600021",
+      "taxcode": "Exclusive"
+    },
+    {
+      "id": "CS003",
+      "name": "Kishore Kumar",
+      "address": "3rd street,Nandan street,chennai 600021",
+      "taxcode": "Zero"
+    }
+  ],
+  "product": [
+    {
+      "id": "11",
+      "name": "tennis bat",
+      "description": "new",
+      "price": "11",
+      "status": true
+    },
+    {
+      "id": "12",
+      "name": "cricket ball",
+      "description": "new",
+      "price": "110",
+      "status": true
+    },
+    {
+      "id": "13",
+      "name": "basket ball",
+      "description": "new",
+      "price": "200",
+      "status": true
+    }
+  ],
+  "tax": [
+    {
+      "id": "Inclusive",
+      "type": "I",
+      "perc": 7
+    },
+    {
+      "id": "Exclusive",
+      "type": "E",
+      "perc": 7
+    },
+    {
+      "id": "Zero",
+      "type": "I",
+      "perc": 0
+    }
+  ],
+  "invoice": [
+    {
+      "id": 0,
+      "customerid": "CS001",
+      "customername": "Ravi Krishna",
+      "deliveryaddress": "1st street,Nandan street,chennai 600021",
+      "invoicedate": "2024-11-23T16:38:09.023Z",
+      "taxcode": "Inclusive",
+      "taxtype": "I",
+      "taxperc": 7,
+      "total": 110,
+      "tax": 7.196261682242991,
+      "nettotal": 110,
+      "products": [
+        {
+          "productid": "12",
+          "name": "cricket ball",
+          "qty": 1,
+          "price": "110",
+          "total": 110
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "customerid": "CS003",
+      "customername": "Kishore Kumar",
+      "deliveryaddress": "3rd street,Nandan street,chennai 600021",
+      "invoicedate": "2024-11-23T16:39:19.697Z",
+      "taxcode": "Zero",
+      "taxtype": "I",
+      "taxperc": 0,
+      "total": 0,
+      "tax": 0,
+      "nettotal": 0,
+      "products": [
+        {
+          "productid": "12",
+          "name": "cricket ball",
+          "qty": "",
+          "price": "110",
+          "total": 0
+        }
+      ]
+    }
+  ]
+}
